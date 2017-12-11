@@ -1,0 +1,6 @@
+framework module SHCRefresh {
+  umbrella header "SHCRefresh-umbrella.h"
+
+  export *
+  module * { export * }
+}
