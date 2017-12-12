@@ -91,3 +91,4 @@ extension Refresh: UIScrollViewDelegate {
     }
   }
 }
+
