@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "SHCRefresh"
-s.version      = "1.0.1"
+s.version      = "1.0.2"
 s.summary      = "swift的下拉刷新控件"
 s.description  = "一个swift4的TableView刷新控件 膳小二的自定义刷新控件"
 s.homepage     = "https://github.com/SHCcc/SHCRefresh"
