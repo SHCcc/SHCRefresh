@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SHCRefresh
 
 public extension UITableView {
   private static let refreshKey = UnsafeRawPointer(bitPattern: "refreshView".hashValue)!

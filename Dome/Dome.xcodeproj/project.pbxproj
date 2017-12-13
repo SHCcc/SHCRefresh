@@ -13,6 +13,7 @@
 		203B9C831FDE741E00AA7B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203B9C811FDE741E00AA7B52 /* Main.storyboard */; };
 		203B9C851FDE741E00AA7B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 203B9C841FDE741E00AA7B52 /* Assets.xcassets */; };
 		203B9C881FDE741E00AA7B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203B9C861FDE741E00AA7B52 /* LaunchScreen.storyboard */; };
+		20B1DF251FE0D75300313216 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B1DF241FE0D75300313216 /* testViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		203B9C841FDE741E00AA7B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		203B9C871FDE741E00AA7B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		203B9C891FDE741E00AA7B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20B1DF241FE0D75300313216 /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		4880FF187E55684E9054B111 /* Pods-Dome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dome/Pods-Dome.debug.xcconfig"; sourceTree = "<group>"; };
 		B51EC639A43918DE435BBA60 /* Pods_Dome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C077C1ED44DF300FB3EA3DD9 /* Pods-Dome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dome/Pods-Dome.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			children = (
 				203B9C7D1FDE741E00AA7B52 /* AppDelegate.swift */,
 				203B9C7F1FDE741E00AA7B52 /* ViewController.swift */,
+				20B1DF241FE0D75300313216 /* testViewController.swift */,
 				203B9C811FDE741E00AA7B52 /* Main.storyboard */,
 				203B9C841FDE741E00AA7B52 /* Assets.xcassets */,
 				203B9C861FDE741E00AA7B52 /* LaunchScreen.storyboard */,
@@ -217,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B1DF251FE0D75300313216 /* testViewController.swift in Sources */,
 				203B9C801FDE741E00AA7B52 /* ViewController.swift in Sources */,
 				203B9C7E1FDE741E00AA7B52 /* AppDelegate.swift in Sources */,
 			);

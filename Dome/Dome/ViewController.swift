@@ -8,13 +8,10 @@
 //
 
 import UIKit
-import SHCRefresh
 
 class ViewController: UIViewController {
-  var items = ["item0", "item1", "item2"]
   
-  let tableView = UITableView()
-//  var refreshView: Refresh?
+  let btn = UIButton()
   override func viewDidLoad() {
     super.viewDidLoad()
     buildUI()
@@ -23,51 +20,27 @@ class ViewController: UIViewController {
 
 extension ViewController {
   fileprivate func buildUI() {
-    view.addSubview(tableView)
+    view.addSubview(btn)
     buildSubView()
     buildLayout()
   }
   
   private func buildSubView() {
-    tableView.delegate = self
-    tableView.dataSource = self
-    tableView.separatorStyle = .none
-    tableView.showsHorizontalScrollIndicator = false
-    tableView.showsVerticalScrollIndicator = false
-    tableView.backgroundColor = UIColor.white
-    tableView.refreshView = Refresh(vc: self, action: #selector(refresh))
-    tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    btn.setTitle("点击", for: .normal)
+    btn.backgroundColor = UIColor.blue
+    btn.addTarget(self,
+                  action: #selector(btnEvent),
+                  for: .touchUpInside)
   }
   
   private func buildLayout() {
-    tableView.frame = view.frame
+    btn.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
   }
 }
 
 
 extension ViewController {
-  @objc func refresh() {
-    print("睡2秒")
-    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1000 * 2)) {
-      print("睡完了")
-      self.items.append("1")
-      self.tableView.reloadData()
-      self.tableView.endRefreshing()
-    }
+  @objc func btnEvent() {
+    navigationController?.pushViewController(testViewController(), animated: true)
   }
 }
-
-
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return items.count
-  }
-  
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-    cell.textLabel?.text = items[indexPath.row]
-    return cell
-  }
-}
-
-
